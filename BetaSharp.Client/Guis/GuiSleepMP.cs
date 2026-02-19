@@ -69,6 +69,6 @@ public class GuiSleepMP : GuiChat
             ClientNetworkHandler sendQueue = ((EntityClientPlayerMP)mc.player).sendQueue;
             sendQueue.addToSendQueue(new ClientCommandC2SPacket(mc.player, 3));
         }
-
     }
+    public override bool DoesGuiPauseGame() => false;
 }
